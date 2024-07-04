@@ -1,0 +1,21 @@
+{
+  "name": "bootstrap-5",
+  "version": "1.0.0",
+  "description": "Bienvenue dans le Github du projet fil rouge \"Portfolio\" associé au [cours OpenClassrooms sur Bootstrap 5](https://openclassrooms.com/fr/courses/6391096-creez-des-sites-web-responsive-avec-bootstrap-4).",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  },
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass -o css/ scss/"
+  }
+}

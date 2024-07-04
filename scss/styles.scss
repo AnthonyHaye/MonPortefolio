@@ -1,0 +1,80 @@
+@import "variables_overrides.scss";   // <-- ajouter cette ligne tout en haut du fichier
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+$primary:       #F2786D;
+$secondary:     #B4B9D9;
+$rose:          #f28dbc;
+$purple:        #bf88a2;
+$rouge:         #a64444;
+
+// Bootstrap override
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "info": $rose,
+  "danger": $rouge,
+  "warning": $purple
+);
+
+// Custom styles
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: $secondary;
+  background-color: #f8f9fa;
+}
+
+.navbar {
+  background-color: $primary;
+  .nav-link {
+    color: #fff;
+    &:hover {
+      color: $secondary;
+    }
+  }
+}
+
+header {
+  background-color: #fff;
+  padding: 2rem 0;
+  .btn-primary {
+    background-color: $primary;
+    border-color: $primary;
+    &:hover {
+      background-color: $rouge;
+      border-color: $rouge;
+    }
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $primary;
+}
+
+.card {
+  border: none;
+  background-color: #fff;
+  .card-body {
+    background-color: $secondary;
+    color: #fff;
+  }
+}
+
+.progress-bar {
+  background-color: $rose;
+}
+
+footer {
+  background-color: $primary;
+  color: #fff;
+  padding: 2rem 0;
+  a {
+    color: $secondary;
+    &:hover {
+      color: $rouge;
+    }
+  }
+}
+
+
